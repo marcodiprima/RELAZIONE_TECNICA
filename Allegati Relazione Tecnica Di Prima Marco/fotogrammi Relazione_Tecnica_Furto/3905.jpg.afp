@@ -1,0 +1,340 @@
+{
+   "Name" : "Amped FIVE Project",
+   "Version" : "3.0",
+   "Properties" : {
+      "Case" : "",
+      "Author" : "",
+      "Description" : "",
+      "Report Max Image Width" : 600,
+      "Report Min Image Width" : 0
+   },
+   "Chains" : [
+      {
+         "Name" : "Catena",
+         "Id" : 1,
+         "IsExpanded" : true,
+         "Level" : 1,
+         "Filters" : [
+            {
+               "Type" : "Video Loader",
+               "Id" : 1,
+               "Enabled" : true,
+               "Parameters" : {
+                  "File" : "../../../Downloads/Furto In Diretta Sessa Aurunca.mp4",
+                  "Video Engine" : "FFMS with Audio",
+                  "Color Range" : "Limited",
+                  "Audio Stream" : "1",
+                  "Original File" : ""
+               }
+            },
+            {
+               "Type" : "Turbulence Deblurring",
+               "Id" : 2,
+               "Enabled" : false,
+               "Parameters" : {
+                  "Strength" : 1,
+                  "Noise" : 0.01,
+                  "Boundary Conditions" : "Edge Tapering"
+               }
+            },
+            {
+               "Type" : "Median Filter",
+               "Id" : 3,
+               "Enabled" : false,
+               "Parameters" : {
+                  "Size" : 3,
+                  "Mode" : "Square",
+                  "Selection" : {
+                     "Type" : "Whole Image",
+                     "Input" : {
+                     }
+                  }
+               }
+            },
+            {
+               "Type" : "Temporal Smoothing",
+               "Id" : 8,
+               "Enabled" : false,
+               "Parameters" : {
+                  "Size" : 5
+               }
+            },
+            {
+               "Type" : "Perspective Super Resolution",
+               "Id" : 9,
+               "Enabled" : false,
+               "Parameters" : {
+                  "Zoom" : 3,
+                  "Output Size" : "Resize Frame",
+                  "Sharpening" : 2
+               }
+            },
+            {
+               "Type" : "Turbulence Deblurring",
+               "Id" : 10,
+               "Enabled" : false,
+               "Parameters" : {
+                  "Strength" : 1,
+                  "Noise" : 0.01,
+                  "Boundary Conditions" : "Edge Tapering"
+               }
+            },
+            {
+               "Type" : "Blind Deconvolution",
+               "Id" : 11,
+               "Enabled" : false,
+               "Parameters" : {
+                  "Size" : 5,
+                  "Iterations" : 10,
+                  "Noise" : 0.01,
+                  "Selection" : {
+                     "Type" : "Whole Image",
+                     "Input" : {
+                     }
+                  }
+               }
+            }
+         ]
+      }
+   ],
+   "ChainsTree" : [
+      {
+         "Name" : "Catena",
+         "Id" : 1,
+         "IsExpanded" : true,
+         "Level" : 1,
+         "Filters" : [
+            {
+               "Type" : "Video Loader",
+               "Id" : 1,
+               "Enabled" : true,
+               "Parameters" : {
+                  "File" : "../../../Downloads/Furto In Diretta Sessa Aurunca.mp4",
+                  "Video Engine" : "FFMS with Audio",
+                  "Color Range" : "Limited",
+                  "Audio Stream" : "1",
+                  "Original File" : ""
+               }
+            },
+            {
+               "Type" : "Turbulence Deblurring",
+               "Id" : 2,
+               "Enabled" : false,
+               "Parameters" : {
+                  "Strength" : 1,
+                  "Noise" : 0.01,
+                  "Boundary Conditions" : "Edge Tapering"
+               }
+            },
+            {
+               "Type" : "Median Filter",
+               "Id" : 3,
+               "Enabled" : false,
+               "Parameters" : {
+                  "Size" : 3,
+                  "Mode" : "Square",
+                  "Selection" : {
+                     "Type" : "Whole Image",
+                     "Input" : {
+                     }
+                  }
+               }
+            },
+            {
+               "Type" : "Temporal Smoothing",
+               "Id" : 8,
+               "Enabled" : false,
+               "Parameters" : {
+                  "Size" : 5
+               }
+            },
+            {
+               "Type" : "Perspective Super Resolution",
+               "Id" : 9,
+               "Enabled" : false,
+               "Parameters" : {
+                  "Zoom" : 3,
+                  "Output Size" : "Resize Frame",
+                  "Sharpening" : 2
+               }
+            },
+            {
+               "Type" : "Turbulence Deblurring",
+               "Id" : 10,
+               "Enabled" : false,
+               "Parameters" : {
+                  "Strength" : 1,
+                  "Noise" : 0.01,
+                  "Boundary Conditions" : "Edge Tapering"
+               }
+            },
+            {
+               "Type" : "Blind Deconvolution",
+               "Id" : 11,
+               "Enabled" : false,
+               "Parameters" : {
+                  "Size" : 5,
+                  "Iterations" : 10,
+                  "Noise" : 0.01,
+                  "Selection" : {
+                     "Type" : "Whole Image",
+                     "Input" : {
+                     }
+                  }
+               }
+            }
+         ]
+      }
+   ],
+   "Bookmarks" : [
+      {
+         "Name" : "Carica Filmato, fotogramma 363",
+         "Description" : "",
+         "Id" : 1,
+         "Position" : 363,
+         "Level" : 1,
+         "IsExpanded" : true
+      },
+      {
+         "Name" : "Sfocatura da Turbolenza, fotogramma 422",
+         "Description" : "",
+         "Id" : 2,
+         "Position" : 422,
+         "Level" : 1,
+         "IsExpanded" : true
+      },
+      {
+         "Name" : "Sfocatura da Turbolenza, fotogramma 518",
+         "Description" : "",
+         "Id" : 2,
+         "Position" : 518,
+         "Level" : 1,
+         "IsExpanded" : true
+      },
+      {
+         "Name" : "Sfocatura da Turbolenza, fotogramma 971",
+         "Description" : "",
+         "Id" : 2,
+         "Position" : 971,
+         "Level" : 1,
+         "IsExpanded" : true
+      },
+      {
+         "Name" : "Sfocatura da Turbolenza, fotogramma 1128",
+         "Description" : "",
+         "Id" : 2,
+         "Position" : 1128,
+         "Level" : 1,
+         "IsExpanded" : true
+      },
+      {
+         "Name" : "Sfocatura da Turbolenza, fotogramma 1374",
+         "Description" : "",
+         "Id" : 2,
+         "Position" : 1374,
+         "Level" : 1,
+         "IsExpanded" : true
+      },
+      {
+         "Name" : "Sfocatura da Turbolenza, fotogramma 2164",
+         "Description" : "",
+         "Id" : 2,
+         "Position" : 2164,
+         "Level" : 1,
+         "IsExpanded" : true
+      },
+      {
+         "Name" : "Carica Filmato, fotogramma 3559",
+         "Description" : "",
+         "Id" : 1,
+         "Position" : 3559,
+         "Level" : 1,
+         "IsExpanded" : true
+      },
+      {
+         "Name" : "Carica Filmato, fotogramma 3905",
+         "Description" : "",
+         "Id" : 1,
+         "Position" : 3905,
+         "Level" : 1,
+         "IsExpanded" : true
+      }
+   ],
+   "BookmarksTree" : [
+      {
+         "Name" : "Carica Filmato, fotogramma 363",
+         "Description" : "",
+         "Id" : 1,
+         "Position" : 363,
+         "Level" : 1,
+         "IsExpanded" : true
+      },
+      {
+         "Name" : "Sfocatura da Turbolenza, fotogramma 422",
+         "Description" : "",
+         "Id" : 2,
+         "Position" : 422,
+         "Level" : 1,
+         "IsExpanded" : true
+      },
+      {
+         "Name" : "Sfocatura da Turbolenza, fotogramma 518",
+         "Description" : "",
+         "Id" : 2,
+         "Position" : 518,
+         "Level" : 1,
+         "IsExpanded" : true
+      },
+      {
+         "Name" : "Sfocatura da Turbolenza, fotogramma 971",
+         "Description" : "",
+         "Id" : 2,
+         "Position" : 971,
+         "Level" : 1,
+         "IsExpanded" : true
+      },
+      {
+         "Name" : "Sfocatura da Turbolenza, fotogramma 1128",
+         "Description" : "",
+         "Id" : 2,
+         "Position" : 1128,
+         "Level" : 1,
+         "IsExpanded" : true
+      },
+      {
+         "Name" : "Sfocatura da Turbolenza, fotogramma 1374",
+         "Description" : "",
+         "Id" : 2,
+         "Position" : 1374,
+         "Level" : 1,
+         "IsExpanded" : true
+      },
+      {
+         "Name" : "Sfocatura da Turbolenza, fotogramma 2164",
+         "Description" : "",
+         "Id" : 2,
+         "Position" : 2164,
+         "Level" : 1,
+         "IsExpanded" : true
+      },
+      {
+         "Name" : "Carica Filmato, fotogramma 3559",
+         "Description" : "",
+         "Id" : 1,
+         "Position" : 3559,
+         "Level" : 1,
+         "IsExpanded" : true
+      },
+      {
+         "Name" : "Carica Filmato, fotogramma 3905",
+         "Description" : "",
+         "Id" : 1,
+         "Position" : 3905,
+         "Level" : 1,
+         "IsExpanded" : true
+      }
+   ],
+   "Notes" : "",
+   "Id" : 1,
+   "Position" : 3905
+}
